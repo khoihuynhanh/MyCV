@@ -1,0 +1,139 @@
+/* tablet */
+@media only screen and (max-width: 1180px) {
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        transform: translateX(-100%);
+        z-index: 10;
+        padding: 0!important;
+        border-right: none;
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+    .sidebar .nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sidebar .nav .nav_list {
+        margin-bottom: 0;
+    }
+
+    .nav_toggler {
+        display: flex;
+        z-index: 999;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .about .about_info, .about .about_contact {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home_img {
+        display: none;
+    }
+
+    .home_contact {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .home_contact .info_item {
+        margin: 8px 0;
+    }
+
+    .home_info .hello {
+        font-size: 20px;
+    }
+
+    .home_info .hello .name {
+        font-size: 24px;
+    }
+
+    .home_info .description {
+        font-size: 24px;
+    }
+
+    .about .about_img {
+        margin-bottom: 20px;
+    }
+
+    .education {
+        margin-bottom: 32px;
+    }
+
+    .btn_skill span {
+        display: none;
+    }
+
+    .skills_content {
+        position: unset;
+        padding: 0 15px;
+    }
+
+    .home_info, .about .about_img, .about .about_data,
+    .about .about_info, .about .about_contact,
+    .education, .experience, .skills_tabs, .skills_content,
+    .work_card, .popup_info, .popup_thumbnail,
+    .contact_item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .milestone_timeline, .milestone_circle {
+        display: none;
+    }
+
+    .milestone_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .milestone_group_item {
+        font-size: 16px;
+        width: 250px;
+        padding: 15px;
+    }
+    
+    .work_filters {
+        flex-direction: column;
+    }
+
+    .work_popup {
+        left: 0;
+    }
+
+    .work_popup-inner {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .popup_body li {
+        margin: 10px 0;
+    }
+}
